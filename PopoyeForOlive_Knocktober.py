@@ -98,7 +98,7 @@ dtrain = xgb.DMatrix(train[predictors], label=target)
 dtest = xgb.DMatrix(test[predictors])
 
 # num_rounds = 224
-# watchlist = [(dtrain, 'dtrain')]
+watchlist = [(dtrain, 'dtrain')]
 # clf_xgb_main = xgb.train(dtrain=dtrain, params=params, num_boost_round=num_rounds, evals=watchlist, verbose_eval=10)
 
 num_rounds = 224
